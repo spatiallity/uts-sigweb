@@ -1,0 +1,14 @@
+p{
+    text-align: justify;
+    margin: auto;
+};
+
+input {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#map {
+    height: 100vh;  
+}

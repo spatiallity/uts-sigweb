@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTS Praktikum SIGWeb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="peta/peta.html">Peta</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <table class="table table-hover table-bordered table-striped container">
+        <tr>
+            <th>Nama</th>
+            <td>Arvian Pratama Riatmaja</td>
+        </tr>
+        <tr>
+            <th>NIM</th>
+            <td>20/460244/TK/50833</td>
+        </tr>
+        <tr>
+            <th>Departemen</th>
+            <td><a href="https://geodesi.ugm.ac.id/">Teknik Geodesi FT UGM</a></td>
+        </tr>
+    </table>
+    <div class="container"> 
+        <p class="h1 text-success"><b>Materi Pembelajaran SIG Berbasis Web</b></p>
+        <p>
+            Dalam mata kuliah Praktikum SIG Berbasis Web, telah dipelajari berbagai Materi
+            yang merupakan rincian dari komponen penyusun sebuah WebGIS. WebGIS merupakan 
+            teknologi yang mengabungkan aplikasi berbasis web 
+            dengan sistem informasi geografis untuk dapat berbagi, memvisualisasi, menganalisis, 
+            dan memanipulasi informasi geospasial melalui internet. WebGIS memungkinkan 
+            pengguna untuk mengakses dan berinteraksi dengan IG melalui browser, 
+            sehingga IG yang terdapat di dalamnya dapat diakses oleh berbagai pengguna 
+            di manapun. 
+        </p><br>
+
+        <p class="h2">
+            Minggu 1: Cara Kerja Internet
+        </p>
+        <p>
+            Secara umum, internet bekerja dengan menggunakan tiga komponen utama, yaitu:
+            <ol>
+                <li><i>Client</i>: perangkat atau manusia yang melakukan 
+                    akses terhadap website.</li>
+                <li><i>Server</I>: perangkat keras maupun lunak pada komputer yang 
+                    berperan dalam menyimpan halaman web pada alamat tertentu.</li>
+                <li>Bahasa atau protokol: media komunikasi yang menjembatani
+                    antara klien dan server.</li>
+            </ol>
+        </p>
+
+        <p class="h2">
+            Minggu 2: Pengenalan HTML dan CSS
+        </p>
+        <P>
+            Dalam pembuatan halaman web, terdapat tiga bahasa yang digunakan, 
+            dua diantaranya adalah HTML (<i>HyperText Markup Language</i>) dan CSS 
+            (<i>Cascading Style Sheets</i>). 
+            <ol>
+                <li>Bahasa HTML merupakan bahasa <i>markup</i>
+                    yang digunakan untuk membuat struktur website hingga 
+                    menyusun format teks dan gambar pada sebuah halaman web.</li>
+                <li>Bahasa CSS merupakan bahasa yang digunakan untuk 
+                    berfungsi untuk mendesain, membentuk, serta mengubah 
+                    tampilan halaman sebuah website.</li>
+            </ol>
+        </P>
+
+
+        <p class="h2">
+            Minggu 3: Pengenalan JavaScript
+        </p>
+        <P>
+            Selain HTML dan CSS, dalam pembuatan halaman web, juga digunkan bahasa lain yaitu
+            JavaScript. JavaScript adalah bahasa pemrograman 
+            yang digunakan oleh pengembang untuk membuat halaman web yang interaktif. JavaScript mengatur
+            <i>behavior</i> yang terdapat pada halaman web.
+        </P>
+
+        <p class="h2">
+            Minggu 4: Bootsrap Framework
+        </p>
+        <p>
+            Bootsrap Framework merupakan framework <i>web development</i> berbasis 
+            HTML, CSS, dan JavaScript yang dirancang untuk mempercepat proses pengembangan web,
+            dengan adanya Bootsrap, <i>developer</i> tidak perlu menyusun sebuah web dari awal.
+            Web yang dibangun dengan Bootstrap bersifat Responsive, artinya dapat dengan 
+            mudah menyesuaikan ukuran pada browser desktop atau mobile
+        </p>
+
+        <p class="h2">
+            Minggu 5 dan 6: Leaflet JS
+        </p>
+        <P>
+            LeafletJS merupakan <i>library Open Source</i> JavaScript yang digunakan dalam
+            mempermudah <i>deployment</i> peta pada sebuah halaman web. 
+        </P>
+
+        <p class="h2">
+            Minggu 7: Mobile GIS
+        </p>
+
+        <P>
+            Mobile GIS merupakan sebuah integrasi 
+            cara kerja perangkat lunak/keras untuk pengaksesan data dan 
+            layanan geospasial melalui perangkat bergerak via jaringan kabel atau nirkabel. 
+            Mobile GIS sangat bermanfaat, utamanya dalam kegiatan pengumpulan data geospasial, di mana
+            nantinya akan terdapat dua perangkat yang digunakan dalam pengumpulan data tersebut, salah 
+            berperan untuk menginput data hasil pendataan di lapangan, dan perangkat lain berperan
+            untuk menyimpan dan memvisualisasikan hasil pemetaan yang dilakukan.
+        </P>
+
+        <br>
+        <label for= "nama">Nama</label><br>
+        <input type="text" required id="nama" placeholder="Masukkan nama"
+        ><br>
+        <label for="email">Email</label><br>
+        <input type="email" required id="email" placeholder="Masukkan email"
+        ><br>
+        <label for="pass">Password</label><br>
+        <input type="password" required id="pass" placeholder="Masukkan password"
+        ><br><br>
+        <input type="submit" onclick="validasi()" value="Validasi">
+        <p id="hasil"></p>
+
+
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+  </body>
+
+
+</html>
